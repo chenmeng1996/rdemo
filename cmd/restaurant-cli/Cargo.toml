@@ -1,0 +1,11 @@
+[package]
+name = "restaurant-cli"
+version = "0.1.0"
+authors = ["陈濛 <chenmeng.yzy@bytedance.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+restaurant = {path="../../restaurant", default-features=false}
+rdemo = {path="../../", default-features=false}
