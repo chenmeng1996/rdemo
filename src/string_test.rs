@@ -1,6 +1,11 @@
 #[cfg(test)]
 mod tests {
 
+    fn create_string() {
+        let mut s = String::new();
+        let mut s = "hello world".to_string();
+        let mut s = String::from("hello world");
+    }
     // 遍历字符串的utf-8字符
     #[test]
     fn for1() {
