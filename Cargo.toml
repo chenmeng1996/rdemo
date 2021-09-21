@@ -15,4 +15,4 @@ members = [
     "cmd/restaurant-cli",
     "restaurant",
 ]
-default-members = ["cmd/restaurant-cli"]
+# default-members = ["restaurant"]

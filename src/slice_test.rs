@@ -8,7 +8,7 @@
 mod tests {
 
     #[test]
-    fn slice1() {
+    fn string_slice() {
         let s = String::from("hello world");
 
         let hello = &s[0..5];
@@ -63,10 +63,31 @@ mod tests {
     }
 
     #[test]
-    fn array_slice() {
-        let a = [1, 2, 3];
-        let slice = &a[1..3];
+    fn array_and_slice() {
+        let array = [1, 2, 3];
+        let slice = &array[1..3];
         // 打印数组和切片的方法
-        print!("{:?} {:?}", a, slice);
+        print!("{:?} {:?}", array, slice);
+    }
+
+    #[test]
+    fn traverse_slice() {
+        let array = [1, 2, 3];
+        let slice = &array[1..3];
+
+        let mut max = 0;
+        // slice里的值都是原数组值的引用
+        for v in slice {
+            if *v > max {
+                max = *v;
+            }
+        }
+
+        let mut max = 0;
+        for &v in slice {
+            if v > max {
+                max = v;
+            }
+        }
     }
 }

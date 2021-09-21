@@ -5,3 +5,6 @@ mod struct_test;
 mod data_test;
 mod enumeration_test;
 mod vector_test;
+mod hashmap_test;
+mod err_handle_test;
+mod generics_test;
