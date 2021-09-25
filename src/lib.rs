@@ -8,3 +8,5 @@ mod vector_test;
 mod hashmap_test;
 mod err_handle_test;
 mod generics_test;
+mod trait_test;
+mod lifetime_test;

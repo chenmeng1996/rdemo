@@ -42,12 +42,26 @@ mod tests {
         max
     }
 
-    // fn largest<T>(list: &[T]) -> T {
-    //     let mut max = list[0];
+    fn largest<T: PartialOrd + Copy>(list: &[T]) -> T {
+        let mut max = list[0];
 
-    //     for &item in list {
-    //         if item > max {
-    //             max = item;
+        for &item in list {
+            if item > max {
+                max = item;
+            }
+        }
+
+        max
+    }
+
+    // 返回引用
+    // TODO 类型不实现Copy
+    // fn largest1<T: PartialOrd>(list: &[T]) -> &T {
+    //     let mut max = &list[0];
+
+    //     for &item in list.iter() {
+    //         if item > *max {
+    //             max = &item;
     //         }
     //     }
 
