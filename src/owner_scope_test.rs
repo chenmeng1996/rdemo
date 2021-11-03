@@ -119,4 +119,14 @@ mod tests {
         }
         &s[..]
     }
+    #[test]
+    fn my_test() {
+        let mut s = String::from("hello world");
+        let s1 = &mut s;
+        //let s2 = &mut s;
+        //println!("{}", s1);
+        println!("{}", s);
+        s.push_str("a");
+        //println!("{}", s1);
+    }
 }
