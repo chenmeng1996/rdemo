@@ -14,5 +14,6 @@ name = "rdemo"
 members = [
     "cmd/restaurant-cli",
     "restaurant",
+    "yzy",
 ]
 # default-members = ["restaurant"]

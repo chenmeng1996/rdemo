@@ -33,6 +33,14 @@ mod tests {
     }
 
     #[test]
+    fn for4() {
+        let s = "hello陈";
+        for item in s.as_bytes().iter() {
+            println!("{}", item);
+        }
+    }
+
+    #[test]
     fn join_string1() {
         let s1 = String::from("Hello, ");
         let s2 = String::from("world!");

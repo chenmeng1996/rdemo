@@ -10,3 +10,4 @@ mod err_handle_test;
 mod generics_test;
 mod trait_test;
 mod lifetime_test;
+mod bytes_test;
