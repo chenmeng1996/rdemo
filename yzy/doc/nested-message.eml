@@ -1,0 +1,100 @@
+From: "John Doe" <john@doe.com>
+To: "Jane Doe" <jane@doe.com>
+Subject: Nested multipart message
+Message-ID: <17195c3c6bf8f924.6f9710288f9270b9.32982d96c746f715@chenmeng>
+Date: Thu, 29 Sep 2022 22:49:11 +0800
+Content-Type: multipart/mixed; 
+	boundary="17195c3c6c03e5a0_dce89e20edcecce_32982d96c746f715"
+
+
+--17195c3c6c03e5a0_dce89e20edcecce_32982d96c746f715
+Content-Type: text/plain; charset="utf-8"
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Part A contents go here...
+--17195c3c6c03e5a0_dce89e20edcecce_32982d96c746f715
+Content-Type: multipart/mixed; 
+	boundary="17195c3c6c0e263c_ac06039b8e2768e3_32982d96c746f715"
+
+
+--17195c3c6c0e263c_ac06039b8e2768e3_32982d96c746f715
+Content-Type: multipart/alternative; 
+	boundary="17195c3c6c12f3ec_4a3d7d550d71e4f8_32982d96c746f715"
+
+
+--17195c3c6c12f3ec_4a3d7d550d71e4f8_32982d96c746f715
+Content-Type: multipart/mixed; 
+	boundary="17195c3c6c150600_e874f70e8cbc610d_32982d96c746f715"
+
+
+--17195c3c6c150600_e874f70e8cbc610d_32982d96c746f715
+Content-Type: text/plain; charset="utf-8"
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Part B contents go here...
+--17195c3c6c150600_e874f70e8cbc610d_32982d96c746f715
+Content-Type: image/jpeg
+Content-Disposition: inline
+Content-Transfer-Encoding: base64
+
+UGFydCBDIGNvbnRlbnRzIGdvIGhlcmUuLi4=
+
+--17195c3c6c150600_e874f70e8cbc610d_32982d96c746f715
+Content-Type: text/plain; charset="utf-8"
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Part D contents go here...
+--17195c3c6c150600_e874f70e8cbc610d_32982d96c746f715--
+
+--17195c3c6c12f3ec_4a3d7d550d71e4f8_32982d96c746f715
+Content-Type: multipart/related; 
+	boundary="17195c3c6c1a9f98_86ac70c80c06dd22_32982d96c746f715"
+
+
+--17195c3c6c1a9f98_86ac70c80c06dd22_32982d96c746f715
+Content-Type: text/html; charset="utf-8"
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Part E contents go here...
+--17195c3c6c1a9f98_86ac70c80c06dd22_32982d96c746f715
+Content-Type: image/jpeg
+Content-Transfer-Encoding: base64
+
+UGFydCBGIGNvbnRlbnRzIGdvIGhlcmUuLi4=
+
+--17195c3c6c1a9f98_86ac70c80c06dd22_32982d96c746f715--
+
+--17195c3c6c12f3ec_4a3d7d550d71e4f8_32982d96c746f715--
+
+--17195c3c6c0e263c_ac06039b8e2768e3_32982d96c746f715
+Content-Type: image/jpeg
+Content-Disposition: attachment; filename="image_G.jpg"
+Content-Transfer-Encoding: base64
+
+UGFydCBHIGNvbnRlbnRzIGdvIGhlcmUuLi4=
+
+--17195c3c6c0e263c_ac06039b8e2768e3_32982d96c746f715
+Content-Type: application/x-excel
+Content-Transfer-Encoding: base64
+
+UGFydCBIIGNvbnRlbnRzIGdvIGhlcmUuLi4=
+
+--17195c3c6c0e263c_ac06039b8e2768e3_32982d96c746f715
+Content-Type: x-message/rfc822
+Content-Transfer-Encoding: base64
+
+UGFydCBKIGNvbnRlbnRzIGdvIGhlcmUuLi4=
+
+--17195c3c6c0e263c_ac06039b8e2768e3_32982d96c746f715--
+
+--17195c3c6c03e5a0_dce89e20edcecce_32982d96c746f715
+Content-Type: text/plain; charset="utf-8"
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Part K contents go here...
+--17195c3c6c03e5a0_dce89e20edcecce_32982d96c746f715--
